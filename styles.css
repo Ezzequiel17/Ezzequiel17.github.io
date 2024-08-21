@@ -96,15 +96,15 @@ body {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    color: #6e2d2d;
-    background-color: #ff4500;
+    color: #000000;
+    background-color: #8b8b8b;
     border: none;
     border-radius: 5px;
     text-decoration: none;
 }
 
 .btn:hover {
-    background-color: #ff6347;
+    background-color: #d4d4d4;
 }
 
 /* About Section */
