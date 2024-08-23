@@ -1,0 +1,233 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background: #000000;
+    color: #ffffff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+        /* Estilo para el botón flotante de WhatsApp */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px; /* Distancia desde el borde inferior */
+            right: 20px; /* Distancia desde el borde derecho */
+            z-index: 1000; /* Asegura que esté por encima de otros elementos */
+            background-color: #25D366; /* Color de fondo del botón */
+            border-radius: 50%; /* Hace el botón redondo */
+            width: 60px; /* Ancho del botón */
+            height: 60px; /* Alto del botón */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra del botón */
+        }
+        .whatsapp-button img {
+            width: 40px; /* Tamaño del ícono */
+            height: 40px;
+        }
+
+
+/* Hero Section */
+.hero {
+    background-image: url('https://img.freepik.com/fotos-premium/pico-montana-nevada-galaxia-estrellada-majestad-ia-generativa_1038396-50.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #1b1b1b;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #979393;
+    margin-top: 60px; /* Altura del navbar */
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: #8b8b8b;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #d4d4d4;
+}
+
+/* About Section */
+.about {
+    padding: 60px 0;
+    text-align: center;
+    background: #000000;
+    color: #ff0000;
+    background-position: center;
+}
+
+/* Projects Section */
+.projects {
+    background: #543c3c;
+    padding: 60px 0;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-card {
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #856464;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #7e7e7e;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact form input, 
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #191414;
+    border-radius: 5px;
+}
+
+.contact form button {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-image: url('https://cdn.eldestapeweb.com/eldestape/042024/1712088725168.webp?cw=312&ch=175');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer2 {
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+/* Media Queries */
+
+/* Para dispositivos móviles (menor a 768px) */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+/* Para dispositivos pequeños (menor a 420px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
